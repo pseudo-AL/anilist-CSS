@@ -1,0 +1,63 @@
+/* Snippets which impose styling uniformity, whether accounting for different site theme choices (E.G. light vs. dark), different
+plugin configurations (E.G. Automail), or anything else which an end-user could unintentionally manipulate and/or break. This is
+meant for my use cases, so the declarions here might not be to your liking. */ 
+
+@import url("https://anzuftnw.github.io/files/simple-theme-framework.css");
+
+/*--- Automail Stuff ---*/
+.hohDownload,
+.hohColourPicker,
+.hohDismiss,
+.pinned {
+    display: none !important;
+}
+.footer .links {
+    margin-left: auto;
+    transform: unset;
+}
+.banner .shadow {
+    display: block;
+}
+.hohButton {
+    background: rgb(var(--color-blue)) !important;
+}
+.about .content-wrap .markdown::after {
+    content: unset !important;
+}
+
+/*--- Global Colour Styling ---*/
+body,
+.site-theme-dark,
+.site-theme-contrast,
+:root {
+    --color-overlay: 20, 20, 20;
+    --color-text: 255, 255, 255;
+    /* plain text, header, statswrap progressbar number indicators */
+    --color-text-light: 255, 255, 255;
+    /* genre and statswrap text, secondary navbar links */
+    --color-text-lighter: 255, 255, 255;
+    /* filter text, time stamp text and icons */
+    --color-foreground-grey-dark: 10, 10, 10, 0.6 !important;
+    /* statswrap progress bar background, activity history empty field background */
+    --color-nav-transparent-background: 20, 20, 20, 0.675;
+    --color-nav-text-hover: 255, 255, 255;
+    /* top navbar text on hover */
+    --color-nav-transparent-text: 255, 255, 255;
+    /* top navbar text in transparent state */
+    --color-shadow-blue: 40, 40, 40;
+    --color-background-100: 20, 20, 20, 0.95;
+    --color-background-200: 20, 20, 20, 0.4;
+    --color-gray-100: 20, 20, 20, 0.95;
+    --color-gray-600: 255, 255, 255;
+    /* navdropdown secondary text and icons */
+    --color-gray-700: 255, 255, 255;
+    /* navdropdown footer text and icons */
+    --color-gray-800: 200, 200, 200;
+    /* navdropdown primary text, text and icon hover */
+    --color-gray-900: 200, 200, 200;
+    /* navdropdown footer text and icon hover */
+    --color-nav-transparent-text: 255, 255, 255;
+    /* top navbar text in transparent state */
+    --color-nav-text-hover: 200, 200, 200;
+    /* top navbar text on hover */
+}
