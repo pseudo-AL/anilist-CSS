@@ -62,3 +62,10 @@ a[href$="/pseudo/"]
 .nav-wrap a {
     background: unset !important
 }
+.nav-wrap {
+    background: rgba(10, 10, 10, 0.9) !important;
+    backdrop-filter: blur(6px);
+}
+.nav-wrap a.link:nth-child(4), .nav-wrap a.link:nth-child(8) {
+    display: none;
+}
