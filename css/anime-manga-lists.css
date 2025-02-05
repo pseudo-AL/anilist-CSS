@@ -1,0 +1,67 @@
+/* global */
+.medialist .notes:before, .medialist .repeat:before {
+    width: max-content;
+    max-width: 67.5%;
+}
+.list-head>div {
+    color: rgb(var(--color-blue));
+    font-weight: bold;
+    font-style: italic;
+}
+.medialist.table.compact .entry .title::before {
+    color: rgb(var(--color-blue));
+    opacity: 0.6;
+}
+.title > :not(.notes) {
+    font-style: italic;
+}
+.medialist .release-status.RELEASING {
+    background: rgb(var(--color-blue));
+    box-shadow: 0 0 5px rgb(var(--color-blue));
+}
+.user .about > div.content-wrap {
+    scrollbar-width: none;
+}
+.medialist .filter-group:first-child span.count {
+    color: rgb(var(--color-blue));
+    font-weight: 500
+}
+.list-editor-wrap .list-editor .body .delete-btn {
+    background: rgb(var(--color-blue-dim));
+}
+.list-wrap .repeat {
+    color: rgb(var(--color-blue-dim));
+}
+.el-slider__button {
+    background-color: rgb(var(--color-blue)) !important;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: rgba(40, 40, 40, 0.5) !important;
+    background: rgba(40, 40, 40, 0.5) !important;
+}
+
+/* anime */
+.list-wrap:has(a:is(a[href*="anime/154122"])) {
+    display: none;
+}
+.list-wrap:has(a:is(a[href*="anime/1269"])) {
+    display: none;
+}
+div.user:has(a.router-link-active[href="/user/pseudo/animelist"]) div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(16) > span, div.user:has(a.router-link-active[href="/user/pseudo/animelist"]) div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(23) > span {
+    display: none !important;
+}
+div.user:has(a.router-link-active[href="/user/pseudo/animelist"]) div.filters-wrap > div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(16), div.user:has(a.router-link-active[href="/user/pseudo/animelist"]) div.filters-wrap > div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(23) {
+    color: rgb(var(--color-blue));
+    pointer-events: none !important;
+    text-align: center;
+}
+
+/* manga */
+div.user:has(a.router-link-active[href="/user/pseudo/mangalist"]) div.filters-wrap > div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(11) > span {
+    display: none !important;
+}
+div.user:has(a.router-link-active[href="/user/pseudo/mangalist"]) div.filters-wrap > div.filters.mobile-nav-hidden > div:nth-child(1) > span:nth-child(11) {
+    color: rgb(var(--color-blue));
+    pointer-events: none !important;
+    text-align: center;
+}
