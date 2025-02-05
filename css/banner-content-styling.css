@@ -1,0 +1,15 @@
+/*--- donator/follow buttons transparency ---*/
+.donator-badge:not(.donator-badge.rainbow) {
+    animation-duration: unset !important;
+    background-color: rgba(var(--color-blue), 0.6) !important;
+}
+.follower-badge,
+.nav-btn {
+    background-color: rgba(var(--color-blue), 0.6) !important;
+}
+.banner-content .actions > :not(.follower-badge, .nav-btn, .donator-badge) {
+    display: none;
+}
+.donator-badge:not(.donator-badge.rainbow) {
+    text-transform: lowercase;
+}
