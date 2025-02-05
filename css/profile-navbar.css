@@ -1,0 +1,64 @@
+.nav > .link {
+    position: relative;
+}
+.nav > .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: rgb(var(--color-blue));
+    transition: 0.2s ease-in-out;
+}
+.nav > .router-link-active::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue));
+}
+.nav > .link:hover::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue));
+}
+.nav-wrap :is(
+a[href*="/animelist"],
+a[href*="/mangalist"],
+a[href$="/pseudo/"]
+) {
+    visibility: hidden;
+    position: relative;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.nav-wrap :is(
+a[href*="/animelist"],
+a[href*="/mangalist"],
+a[href$="/pseudo/"]
+)::after {
+    visibility: visible;
+}
+.nav-wrap :is(
+a[href*="/animelist"],
+a[href*="/mangalist"],
+a[href$="/pseudo/"]
+)::before {
+    text-align: center;
+    display: inline-block;
+    left: 0;
+    width: 100%;
+    visibility: visible;
+    position: absolute;
+}
+.nav-wrap a[href*="/animelist"]::before {
+    content: "anime";
+}
+.nav-wrap a[href*="/mangalist"]::before {
+    content: "manga";
+}
+.nav-wrap a[href$="/pseudo/"]::before {
+    content: "me";
+}
+.nav-wrap a {
+    background: unset !important
+}
