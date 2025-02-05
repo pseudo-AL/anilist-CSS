@@ -28,7 +28,20 @@ meant for my use cases, so the declarions here might not be to your liking. */
 #app > div > .footer {
     display: none;
 }
-
+.button[data-v-c574a71c], .void-button.void-self-message {
+    font-weight: 650;
+}
+.details .title {
+    font-weight: 600;
+}
+/*--- Reset Tier 4+ Donator Badges (Message me if you want to be added to this) ---*/
+:is(
+.name[href="/user/Wing/"],
+.name[href="/user/unhappyrefrain/"],
+.name[href="/user/xKyofu/"]
+) + .donator-badge {
+    text-transform: unset !important;
+}
 /*--- Global Colour Styling ---*/
 body,
 .site-theme-dark,
