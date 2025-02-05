@@ -1,0 +1,20 @@
+div.desktop:nth-child(3) {
+    display: none;
+}
+.tooltip .title {
+    text-transform: lowercase;
+}
+.tooltip .content:has(.circle) {
+    display: block;
+    text-transform: lowercase;
+}
+body:has(.content > .overview, .favourites .favourites) .tooltip .content {
+    display: none;
+}
+.tooltip .title {
+    text-transform: lowercase;
+}
+body:has(.content > .overview, .favourites .favourites) .tooltip .content:has(.circle) {
+    display: block;
+    text-transform: lowercase;
+}
