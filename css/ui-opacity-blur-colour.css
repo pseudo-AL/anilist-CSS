@@ -91,28 +91,3 @@ input.el-select__input.is-small {
 body {
     background-color: black;
 }
-
-/*--- container ---*/
-.header-wrap > .nav-wrap {
-    max-width: 1240px !important;
-    margin: 0 auto;
-    border-radius: var(--brt);
-    position: relative;
-}
-.content.container {
-    background: rgba(20, 20, 20, 0.75) !important;
-    padding: var(--pdh);
-    border-radius: var(--brb);
-}
-.content.container:not(:has(.el-dialog__wrapper)) {
-    backdrop-filter: blur(8px);
-}
-.content > .overview,
-.content > .medialist,
-.favourites,
-.content > .stats,
-.content > .user-social,
-.content .review-wrap,
-.content .submissions {
-    margin-top: 0 !important;
-}
