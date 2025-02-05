@@ -1,0 +1,56 @@
+:root {
+    --avatar-url: url(https://i.imgur.com/LHJmJ0m.png);
+}
+.banner-content > .avatar {
+    max-width: 280px !important;
+    max-height: 280px !important;
+    content: var(--avatar-url);
+}
+/*--- profile background ---*/
+body {
+    background-image: url("https://i.imgur.com/0fcPWAG.jpeg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Avatar hover bubble - credit to @Sekuji */
+.banner-content:hover::before {
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+}
+.banner-content::before {
+    content: "";
+    position: absolute;
+    transition: 0.1s ease-in-out;
+    display: block;
+    width: 167px;
+    height: 95px;
+    background-image: url(https://i.imgur.com/0ykDkP1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 68%;
+    margin-left: -75px;
+    z-index: 999;
+    opacity: 0;
+}
+/*--- banner ---*/
+.banner {
+    visibility: hidden;
+}
+.banner > .container {
+    visibility: visible;
+    justify-content: center;
+}
+.review-card > .banner {
+    visibility: visible !important;
+}
+.banner:not(.review-card > .banner) {
+    height: calc(100vh - 46px) !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    transition: height 0.6s ease-in-out;
+}
