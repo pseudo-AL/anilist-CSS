@@ -18,3 +18,7 @@ body:has(.content > .overview, .favourites .favourites) .tooltip .content:has(.c
     display: block;
     text-transform: lowercase;
 }
+.history-day:hover {
+    transition: transform 0.125s ease-in-out;
+    transform: scale(1.15);
+}
