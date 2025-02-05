@@ -53,7 +53,12 @@ a.favourite:hover::after {
 .favourites .favourites .section-header {
     visibility: hidden;
 }
-
+.overview div.favourites h2:not(.favourites:nth-child(4) > h2:nth-child(1)) {
+    margin-top: -30px;
+}
+.overview div.favourites:nth-child(4) > h2:nth-child(1)::after, .overview div.favourites:nth-child(5) > h2:nth-child(1)::after, .overview div.favourites:nth-child(6) > h2:nth-child(1)::after, .overview div.favourites:nth-child(7) > h2:nth-child(1)::after {
+    margin-bottom: -15px;
+}
 .favourites.preview .favourites-wrap:not(.favourites.preview .favourites-wrap.studios) {
     display: grid !important;
     grid-gap: 12px !important;
