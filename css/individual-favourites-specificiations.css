@@ -1,0 +1,389 @@
+:root {
+    --height: 121px;
+    --width: 86px;
+    --gap: 11px;
+    --first-column: -4px;
+    --second-column: calc(var(--first-column) + var(--width) + var(--gap));
+    --third-column: calc(var(--second-column) + var(--width) + var(--gap));
+    --fourth-column: calc(var(--third-column) + var(--width) + var(--gap));
+    --first-row: 394.4px;
+    --second-row: calc(var(--first-row) + var(--height) + var(--gap));
+    --third-row: calc(var(--second-row) + var(--height) + var(--gap));
+    --fourth-row: calc(var(--third-row) + var(--height) + var(--gap));
+    --fifth-row: calc(var(--fourth-row) + var(--height) + var(--gap));
+    --sixth-row: calc(var(--fifth-row) + var(--height) + var(--gap));
+    --first-row-manga: calc(var(--sixth-row) + var(--height) + 60px);
+    --second-row-manga: calc(var(--first-row-manga) + var(--height) + var(--gap));
+    --third-row-manga: calc(var(--second-row-manga) + var(--height) + var(--gap));
+    --fourth-row-manga: calc(var(--third-row-manga) + var(--height) + var(--gap));
+    --write-up: "write-up";
+    --review: "review";
+    --favourite-highlight: #b5c3c7;
+}
+@media screen and (min-width: 1041px) {
+    .overview
+    > .section
+    > .about
+    > .content-wrap
+    > .markdown
+:is(a[href="https://anilist.co/activity/814482862"],
+    a[href="https://anilist.co/activity/666950538"],
+    a[href="https://anilist.co/review/19010"],
+    a[href="https://anilist.co/activity/627732874"],
+    a[href="https://anilist.co/activity/688150912"],
+    a[href="https://anilist.co/review/20425"],
+    a[href="https://anilist.co/activity/581216046"],
+    a[href="https://anilist.co/activity/698237502"],
+    a[href="https://anilist.co/review/18808"],
+    a[href="https://anilist.co/activity/564866741"],
+    a[href="https://anilist.co/activity/758500795"],
+    a[href="https://anilist.co/activity/642641416"],
+    a[href="https://anilist.co/activity/556474589"],
+    a[href="https://anilist.co/activity/721543803"],
+    a[href="https://anilist.co/activity/568076669"],
+    a[href="https://anilist.co/activity/810987551"],
+    a[href="https://anilist.co/activity/833815935"],
+    a[href="https://anilist.co/activity/562322060"],
+    a[href="https://anilist.co/activity/816598982"],
+    a[href="https://anilist.co/activity/774275832"],
+    a[href="https://anilist.co/activity/778294816"],
+    a[href="https://anilist.co/activity/831145330"],
+    a[href="https://anilist.co/activity/684950577"],
+    a[href="https://anilist.co/activity/659449448"],
+    a[href="https://anilist.co/activity/660965588"],
+    a[href="https://anilist.co/activity/663962372"],
+    a[href="https://anilist.co/activity/683463783"])::before
+    {
+        content: var(--write-up);
+        /* background: red; */
+        color: white;
+        font-size: 11px;
+        width: 100%;
+        background: rgba(var(--color-overlay), 0.65);
+        border-radius: 0px 0px 4px 4px;
+        height: 21px;
+        width: 85px;
+        z-index: 4;
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        opacity: 1
+    }
+}
+
+.overview
+> .section
+> .about
+> .content-wrap
+> .markdown
+:is(a[href="https://anilist.co/activity/814482862"],
+a[href="https://anilist.co/activity/666950538"],
+a[href="https://anilist.co/review/19010"],
+a[href="https://anilist.co/activity/627732874"],
+a[href="https://anilist.co/activity/688150912"],
+a[href="https://anilist.co/review/20425"],
+a[href="https://anilist.co/activity/581216046"],
+a[href="https://anilist.co/activity/698237502"],
+a[href="https://anilist.co/review/18808"],
+a[href="https://anilist.co/activity/564866741"],
+a[href="https://anilist.co/activity/758500795"],
+a[href="https://anilist.co/activity/642641416"],
+a[href="https://anilist.co/activity/556474589"],
+a[href="https://anilist.co/activity/568076669"],
+a[href="https://anilist.co/activity/810987551"],
+a[href="https://anilist.co/activity/833815935"],
+a[href="https://anilist.co/activity/721543803"],
+a[href="https://anilist.co/activity/562322060"],
+a[href="https://anilist.co/activity/816598982"],
+a[href="https://anilist.co/activity/774275832"],
+a[href="https://anilist.co/activity/778294816"],
+a[href="https://anilist.co/activity/831145330"],
+a[href="https://anilist.co/activity/684950577"],
+a[href="https://anilist.co/activity/660965588"],
+a[href="https://anilist.co/activity/659449448"],
+a[href="https://anilist.co/activity/663962372"],
+a[href="https://anilist.co/activity/683463783"]):hover::before
+{
+    color: rgb(var(--color-link));
+    z-index: 6;
+}
+
+/*--- aria the origination ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/814482862"]::before
+{
+    transform: translate(var(--first-column), var(--first-row));
+    width: 376px !important;
+}
+.favourites.preview a.favourite[href*="anime/3297"] {
+
+    background-image: url(https://i.imgur.com/MDtgehr.jpeg) !important;
+    grid-column: 1 / 5;
+}
+.favourites.preview a.favourite[href*="anime/3297"]:hover {
+    box-shadow: 0px 0px 6px 3px #51b4e3;
+}
+
+/*--- liz and the blue bird ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/666950538"]::before
+{
+    transform: translate(var(--first-column), var(--second-row));
+}
+.favourites.preview a.favourite[href*="anime/100178"]:hover {
+    box-shadow: 0px 0px 6px 3px #61bcc7;
+}
+
+/*--- mushishi ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/627732874"]::before
+{
+    transform: translate(var(--second-column), var(--second-row));
+    width: 182px;
+}
+.favourites.preview a.favourite[href*="anime/457"] {
+    background-image: url(https://i.imgur.com/bTQ1vpm.jpeg) !important;
+    grid-column: 2 / 4;
+}
+.favourites.preview a.favourite[href*="anime/457"]:hover {
+    box-shadow: 0px 0px 6px 3px #ede2c1;
+}
+/*--- a place further than the universe ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/688150912"]::before
+{
+    transform: translate(var(--fourth-column), var(--second-row));
+}
+.favourites.preview a.favourite[href*="anime/99426"]:hover {
+    box-shadow: 0px 0px 6px 3px #f48d24;
+}
+/*--- anj 2 ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/684950577"]::before
+{
+    transform: translate(var(--first-column), var(--third-row));
+}
+.favourites.preview a.favourite[href*="anime/2921"]:hover {
+    box-shadow: 0px 0px 6px 3px #d72a35;
+}
+
+/*--- non non biyori ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/review/19010"]::before
+{
+    transform: translate(var(--second-column), var(--third-row));
+    content: var(--review);
+}
+.favourites.preview a.favourite[href*="anime/17549"]:hover {
+    box-shadow: 0px 0px 6px 3px #54c417;
+}
+
+/*--- tamayura ashita ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/683463783"]::before
+{
+    transform: translate(var(--third-column), var(--third-row));
+}
+.favourites.preview a.favourite[href*="anime/21554"]:hover {
+    box-shadow: 0px 0px 6px 3px #f9e6ec;
+}
+
+/*--- sonny boy ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/review/20425"]::before
+{
+    transform: translate(var(--fourth-column), var(--third-row));
+    content: var(--review);
+}
+.favourites.preview a.favourite[href*="anime/132126"]:hover {
+    box-shadow: 0px 0px 6px 3px #b9b496;
+}
+
+/*--- tamako love story ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/642641416"]::before
+{
+    transform: translate(var(--first-column), var(--fourth-row));
+}
+.favourites.preview a.favourite[href*="anime/20519"]:hover {
+    box-shadow: 0px 0px 6px 3px #c1f378;
+}
+
+/*--- oregairu ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/721543803"]::before
+{
+    transform: translate(var(--second-column), var(--fourth-row));
+}
+.favourites.preview a.favourite[href*="anime/20698"]:hover {
+    box-shadow: 0px 0px 6px 3px #aa7984;
+}
+
+/*--- hyouka ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/810987551"]::before
+{
+    transform: translate(var(--third-column), var(--fourth-row));
+}
+.favourites.preview a.favourite[href*="anime/12189"]:hover {
+    box-shadow: 0px 0px 6px 3px #f4c1be;
+}
+
+/*--- akage no anne ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/659449448"]::before
+{
+    transform: translate(var(--fourth-column), var(--fourth-row));
+}
+.favourites.preview a.favourite[href*="anime/283"]:hover {
+    box-shadow: 0px 0px 6px 3px #f9e8d9;
+}
+
+/*--- girls last tour ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/581216046"]::before
+{
+    transform: translate(var(--first-column), var(--fifth-row));
+}
+.favourites.preview a.favourite[href*="anime/99420"]:hover {
+    box-shadow: 0px 0px 6px 3px #475652;
+}
+
+/*--- chihayafuru ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/758500795"]::before
+{
+    transform: translate(var(--second-column), var(--fifth-row));
+}
+.favourites.preview a.favourite[href*="anime/10800"]:hover {
+    box-shadow: 0px 0px 6px 3px #94c83b;
+}
+
+/*--- shirobako ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/698237502"]::before
+{
+    transform: translate(var(--third-column), var(--fifth-row));
+}
+.favourites.preview a.favourite[href*="anime/20812"]:hover {
+    box-shadow: 0px 0px 6px 3px #5287d7;
+}
+
+/*--- in this corner of the world ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/562322060"]::before
+{
+    transform: translate(var(--fourth-column), var(--fifth-row));
+}
+.favourites.preview a.favourite[href*="anime/15227"]:hover {
+    box-shadow: 0px 0px 6px 3px #b2c989;
+}
+
+/*--- march comes in like a lion 2 ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/564866741"]::before
+{
+    transform: translate(var(--first-column), var(--sixth-row));
+}
+.favourites.preview a.favourite[href*="anime/98478"]:hover {
+    box-shadow: 0px 0px 6px 3px #e49c74;
+}
+
+/*--- haibane renmei ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/review/18808"]::before
+{
+    transform: translate(var(--second-column), var(--sixth-row));
+    content: var(--review);
+}
+.favourites.preview a.favourite[href*="anime/387"]:hover {
+    box-shadow: 0px 0px 6px 3px #88a7b0;
+}
+
+/*--- texhnolyze ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/663962372"]::before
+{
+    transform: translate(var(--third-column), var(--sixth-row));
+}
+.favourites.preview a.favourite[href*="anime/26"]:hover {
+    box-shadow: 0px 0px 6px 3px #65907b;
+}
+
+/*--- logh ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/660965588"]::before
+{
+    transform: translate(var(--fourth-column), var(--sixth-row));
+}
+.favourites.preview a.favourite[href*="anime/820"]:hover {
+    box-shadow: 0px 0px 6px 3px #e5b841;
+}
+
+/*--- bloom into you ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/831145330"]::before
+{
+    transform: translate(var(--first-column), var(--first-row-manga));
+    width: 376px;
+}
+.favourites.preview a.favourite[href*="manga/86218"] {
+
+    background-image: url(https://i.imgur.com/dhW1qqL.png) !important;
+    grid-column: 1 / 5;
+}
+.favourites.preview a.favourite[href*="manga/86218"]:hover {
+    box-shadow: 0px 0px 6px 3px #e79a70;
+}
+
+/*--- oregairu ---*/
+.favourites.preview a.favourite[href*="manga/70171"] {
+
+    background-image: url(https://i.imgur.com/OQvPhod.jpeg) !important;
+    grid-column: 1 / 5;
+}
+.favourites.preview a.favourite[href*="manga/70171"]:hover {
+    box-shadow: 0px 0px 6px 3px #9c99ad;
+}
+
+/*--- ykk ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/778294816"]::before
+{
+    transform: translate(var(--first-column), var(--third-row-manga));
+    width: 182px;
+}
+.favourites.preview a.favourite[href*="manga/30004"] {
+
+    background-image: url(https://i.imgur.com/DVD5DY9.png) !important;
+    grid-column: 1 / 3;
+}
+.favourites.preview a.favourite[href*="manga/30004"]:hover {
+    box-shadow: 0px 0px 6px 3px #56afdd;
+}
+
+/*--- saeki ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/816598982"]::before
+{
+    transform: translate(var(--third-column), var(--third-row-manga));
+    width: 182px;
+}
+.favourites.preview a.favourite[href*="manga/105388"] {
+
+    background-image: url(https://i.imgur.com/IpJhZmg.jpeg) !important;
+    grid-column: 3 / 5;
+}
+.favourites.preview a.favourite[href*="manga/105388"]:hover {
+    box-shadow: 0px 0px 6px 3px #ddbfb5;
+}
+
+/*--- solanin ---*/
+.favourites.preview a.favourite[href*="manga/33731"]:hover {
+    box-shadow: 0px 0px 6px 3px #b5883b;
+}
+
+/*--- chihayafuru ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/833815935"]::before
+{
+    transform: translate(var(--second-column), var(--fourth-row-manga));
+}
+.favourites.preview a.favourite[href*="manga/43245"]:hover {
+    box-shadow: 0px 0px 6px 3px #fa8d65;
+}
+
+/*--- girls' last tour ---*/
+.favourites.preview a.favourite[href*="manga/85412"]:hover {
+    box-shadow: 0px 0px 6px 3px #919496;
+}
+
+/*--- scum's wish ---*/
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/774275832"]::before
+{
+    transform: translate(var(--fourth-column), var(--fourth-row-manga));
+}
+.favourites.preview a.favourite[href*="manga/74929"]:hover {
+    box-shadow: 0px 0px 6px 3px #583e8f;
+}
+
+/*--- kyoani highlight ---*/
+a.favourite.studio[href*="studio/2/"] {
+    text-shadow: rgb(var(--color-blue)) 3px 0 8px !important;
+}
