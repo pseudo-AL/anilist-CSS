@@ -1,3 +1,17 @@
+:root,
+.site-theme-dark,
+.site-theme-contrast {
+    --border-radius: 10px;
+    /* global border radius */
+    --padding-v: 30px;
+    /* vertical content padding */
+    --padding-h: 30px;
+    /* horizontal content padding */
+    --brt: var(--border-radius) var(--border-radius) 0 0;
+    --brb: 0 0 var(--border-radius) var(--border-radius);
+    --pdh: var(--padding-v) var(--padding-h);
+}
+
 /*--- container ---*/
 .header-wrap > .nav-wrap {
     max-width: 1240px !important;
