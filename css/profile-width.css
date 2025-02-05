@@ -1,0 +1,60 @@
+/*--- profile width ---*/
+.favourites.preview .favourites-wrap {
+    padding: 17px !important;
+    padding-bottom: 4px !important;
+    padding-right: 0 !important;
+}
+.favourites.preview .favourites-wrap .favourite,
+.favourites.preview .favourites-wrap > div {
+    margin-bottom: 12px !important;
+    margin-right: 17px !important;
+}
+.container {
+    max-width: 1240px !important;
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+}
+.genres .genre:last-child {
+    display: none !important;
+}
+.history-day:nth-of-type(-n + 21) {
+    display: none;
+}
+.activity-entry:has(.small) {
+    grid-column-start: 1 !important;
+    grid-column-end: 3 !important;
+}
+.section > .stats-wrap {
+    grid-template-columns: 1fr !important;
+    grid-column-gap: 0 !important;
+}
+.stat-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+.stat-cards.has-images {
+    grid-template-columns: 1fr !important;
+    max-width: 700px !important;
+}
+.highlights {
+    display: grid !important;
+    grid-gap: 40px 30px !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin-left: 5% !important;
+    width: 90% !important;
+}
+
+/*--- further width tweaking ---*/
+
+.section:first-child {
+    position: relative;
+    width: 408px !important;
+    right: 25px !important;
+}
+.section:last-child {
+    position: relative;
+    right: 60px !important;
+    width: 684px !important;
+}
+.nav .link[data-v-1cc2919e] {
+    margin: 0 15px;
+}
