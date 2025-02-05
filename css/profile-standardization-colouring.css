@@ -24,6 +24,10 @@ meant for my use cases, so the declarions here might not be to your liking. */
 .about .content-wrap .markdown::after {
     content: unset !important;
 }
+/*--- Hide Footer ---*/
+#app > div > .footer {
+    display: none;
+}
 
 /*--- Global Colour Styling ---*/
 body,
