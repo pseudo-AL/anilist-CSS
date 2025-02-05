@@ -1,0 +1,15 @@
+.quick-search > .name {
+    text-transform: initial !important;
+}
+.quick-search[data-v-17620a08] {
+    transition: opacity .2s ease;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(8px) !important;
+}
+.input[data-v-17620a08] {
+    transition: .2s ease;
+}
+.quick-search.visible .input:hover {
+    transition: transform 0.125s ease-in-out;
+    transform: scale(1.05);
+}
