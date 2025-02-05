@@ -13,3 +13,6 @@
 .donator-badge:not(.donator-badge.rainbow) {
     text-transform: lowercase;
 }
+.name-wrapper > .name {
+    text-shadow: 1px 1px 4px black;
+}
