@@ -5,6 +5,15 @@
     text-transform: lowercase;
     font-weight: 700
 }
+.overview .section:first-child .section-header {
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+}
+.favourites.preview .favourites-wrap.studios[data-v-ddf96a3c] {
+    text-align: center;
+    margin-top: -5px;
+}
 a.favourite {
     margin-bottom: 32px !important;
     z-index: 5;
