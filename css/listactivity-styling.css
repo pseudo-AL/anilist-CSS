@@ -5,7 +5,7 @@
     background-size: 100% !important;
     filter: saturate(80%);
 }
-.activity-feed .list.small:hover .cover {
+.activity-feed .activity-entry:has(.small):hover * .cover {
     background-size: 110% !important;
     filter: saturate(125%);
 }
@@ -27,11 +27,11 @@
     justify-content: center; 
     height: 100%;
 }
-.activity-feed .list.small:hover:not(:has(.cover:hover)) .entry-dropdown[data-v-04d66030] {
+.activity-feed .activity-entry:has(.small):hover:not(:has(.cover:hover)) .entry-dropdown[data-v-04d66030] {
     opacity: 0;
     pointer-events: none;
 }
-.activity-feed .list.small:hover:not(:has(.cover:hover)) .entry-dropdown[data-v-04d66030]:hover {
+.activity-feed .activity-entry:has(.small):hover:not(:has(.cover:hover)) .entry-dropdown[data-v-04d66030]:hover {
     opacity: 1 !important;
     pointer-events: auto !important;
 }
