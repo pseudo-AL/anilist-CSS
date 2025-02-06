@@ -8,15 +8,11 @@
     font-weight: bold;
     font-style: italic;
 }
-.medialist.table.compact .entry .title::before {
-    color: rgb(var(--color-blue));
-    opacity: 0.6;
-}
 .title > :not(.notes) {
     font-style: italic;
 }
 .medialist .release-status.RELEASING {
-    background: rgb(var(--color-blue));
+    background: rgb(var(--color-blue-dim));
     box-shadow: 0 0 5px rgb(var(--color-blue));
 }
 .user .about > div.content-wrap {
@@ -29,8 +25,8 @@
 .list-editor-wrap .list-editor .body .delete-btn {
     background: rgb(var(--color-blue-dim));
 }
-.list-wrap .repeat {
-    color: rgb(var(--color-blue-dim));
+.list-wrap .repeat, .medialist.table.compact .entry .title::before {
+    color: color-mix(in srgb,rgb(var(--color-blue)) 70%, rgb(var(--color-text)));
 }
 .el-slider__button {
     background-color: rgb(var(--color-blue)) !important;
