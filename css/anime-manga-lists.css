@@ -35,6 +35,48 @@
     background-color: rgba(40, 40, 40, 0.5) !important;
     background: rgba(40, 40, 40, 0.5) !important;
 }
+/*--- List Grid View Adjustments ---*/
+.medialist.cards .list-section {
+    background: unset !important;
+}
+.medialist.cards .entry-card .notes:before {
+    min-width: 35vw;
+}
+.medialist.cards .entry-card:nth-child(5n) .notes:before {
+  left: auto;
+  right: 100%;
+  transform: translateX(-10px);
+}
+.medialist.cards .entry-card .title {
+    background: rgba(var(--color-overlay), .7);;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 3px 3px;
+    transition: all 0.2s ease-in-out;
+}
+.medialist.cards .entry-card:hover .title {
+    background: rgba(var(--color-overlay), .9);;
+    backdrop-filter: blur(9px);
+}
+.medialist.cards .entry-card .image {
+    background-size: 100% !important;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px !important;
+}
+.medialist.cards .entry-card:hover .image {
+    background-size: 110% !important;
+    box-shadow: 0px 0px 6px 3px color-mix(in srgb, rgb(var(--color-blue)) 45%, rgb(var(--color-text)));
+}
+.medialist.cards .entry-card .progress, .medialist.cards .entry-card .score {
+    color: color-mix(in srgb,rgb(var(--color-blue)) 60%, rgb(var(--color-text)));
+}
+.medialist.cards .entry-card .edit {
+    background: rgba(var(--color-overlay), .7);
+    transition: all 0.2s ease-in-out;
+}
+.medialist.cards .entry-card .edit:hover {
+    background: rgba(var(--color-overlay), .85);
+    backdrop-filter: blur(3px);
+}
 
 /* anime */
 .list-wrap:has(a:is(a[href*="anime/154122"])) {
