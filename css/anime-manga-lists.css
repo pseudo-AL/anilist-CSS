@@ -40,7 +40,8 @@
     background: unset !important;
 }
 .medialist.cards .entry-card .notes:before {
-    min-width: 35vw;
+    min-width: fit-content;
+    max-width: 35vw !important;
 }
 .medialist.cards .entry-card:nth-child(5n) .notes:before {
   left: auto;
