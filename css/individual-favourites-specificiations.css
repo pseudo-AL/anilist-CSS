@@ -18,7 +18,6 @@
     --fourth-row-manga: calc(var(--third-row-manga) + var(--height) + var(--gap));
     --write-up: "write-up";
     --review: "review";
-    --favourite-highlight: #b5c3c7;
 }
 @media screen and (min-width: 1041px) {
     .overview
