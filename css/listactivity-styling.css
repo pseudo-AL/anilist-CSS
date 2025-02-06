@@ -9,6 +9,9 @@
     background-size: 110% !important;
     filter: saturate(125%);
 }
+.activity-feed .activity-entry:has(.small):hover * .title {
+    color: color-mix(in srgb,rgb(var(--color-blue)) 65%, rgb(var(--color-text)));
+}
 /* Activity Feed Dropdown Stuff - most credit for this is to @Sekuji */
 .list.small .entry-dropdown[data-v-04d66030] {
     border-radius: 0 0 0 0;
