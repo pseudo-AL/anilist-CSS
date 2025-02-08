@@ -69,3 +69,52 @@ a[href$="/pseudo/"]
 .nav-wrap a.link:nth-child(4), .nav-wrap a.link:nth-child(8) {
     display: none;
 }
+/* Navbar Search */
+    body #nav .wrap .search {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    padding: 10px 14px;
+    background: rgb(200, 200, 200, 0.1);
+    border-radius: 35px;
+    margin: 0 5px 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    position: relative; 
+}
+body #nav .wrap .search:hover {
+    background: rgb(200, 200, 200, 0.05);
+    width: 240px;
+}
+body #nav .wrap .search:after {
+    content: "greys & half-lives";
+    margin-left: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+body #nav .wrap .search:hover::after {
+  color: #aaaaaa !important;
+}
+.transparent .search[data-v-62eacfff] svg {
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+.search[data-v-62eacfff]:hover svg {
+    color: #aaaaaa;
+}
+.user .chevron[data-v-62eacfff] {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    transition: all 0.2s ease-in-out;
+}
+body #nav .wrap .search:hover ~ .chevron[data-v-62eacfff] {
+    color: inherit !important; 
+}
+.user:has(.notification-dot[data-v-62eacfff]) .chevron[data-v-62eacfff] {
+    visibility: hidden;
+}
