@@ -117,3 +117,9 @@ div.user:has(a.router-link-active[href="/user/pseudo/mangalist"]) div.filters-wr
     pointer-events: none !important;
     text-align: center;
 }
+.el-input--small .el-input__inner::placeholder, .el-input__inner::placeholder, .el-input__prefix {
+    color: #ffffff;
+}
+.el-select-dropdown__item.selected {
+    color: #646464;
+}
