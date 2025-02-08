@@ -1,4 +1,4 @@
-.quick-search > .name {
+.quick-search > .results > :nth-child(6) {
     text-transform: initial !important;
 }
 .quick-search[data-v-17620a08] {
@@ -11,5 +11,14 @@
 }
 .quick-search.visible .input:hover {
     transition: transform 0.125s ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1.025);
+}
+[data-v-17620a08] .result .open-list-editor {
+    color: rgb(220, 220, 220);
+    background: rgba(200, 200, 200, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+[data-v-17620a08] .result .open-list-editor:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(160, 160, 160, 0.5);
 }
