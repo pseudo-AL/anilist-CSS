@@ -47,7 +47,6 @@ body,
 .site-theme-dark,
 .site-theme-contrast,
 :root {
-    --color-overlay: 20, 20, 20;
     --color-text: 255, 255, 255;
     /* plain text, header, statswrap progressbar number indicators */
     --color-text-light: 255, 255, 255;
@@ -59,6 +58,7 @@ body,
     --color-nav-transparent-background: 20, 20, 20, 0.675;
     --color-nav-text-hover: 255, 255, 255;
     /* top navbar text on hover */
+    --color-nav-text: 255, 255, 255;
     --color-nav-transparent-text: 255, 255, 255;
     /* top navbar text in transparent state */
     --color-shadow-blue: 40, 40, 40;
@@ -69,12 +69,18 @@ body,
     /* navdropdown secondary text and icons */
     --color-gray-700: 255, 255, 255;
     /* navdropdown footer text and icons */
-    --color-gray-800: 200, 200, 200;
+    --color-gray-800: 170, 170, 170;
     /* navdropdown primary text, text and icon hover */
-    --color-gray-900: 200, 200, 200;
+    --color-gray-900: 170, 170, 170;
     /* navdropdown footer text and icon hover */
     --color-nav-transparent-text: 255, 255, 255;
     /* top navbar text in transparent state */
-    --color-nav-text-hover: 200, 200, 200;
+    --color-nav-text-hover: 170, 170, 170;
     /* top navbar text on hover */
+}
+.link[data-v-62eacfff]:hover {
+    color: #aaaaaa;
+}
+.primary-link[data-v-38edf8f8] {
+    color: #ffffff;
 }
