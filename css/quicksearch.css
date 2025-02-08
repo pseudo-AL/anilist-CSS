@@ -22,3 +22,9 @@
     color: rgb(255, 255, 255);
     background: rgba(160, 160, 160, 0.5);
 }
+.quick-search .result-col .title {
+    color: rgba(255, 255, 255) !important;
+}
+.input .icon.right[data-v-17620a08]:hover {
+    color: rgba(170, 170, 170);
+}
