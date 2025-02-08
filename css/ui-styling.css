@@ -10,11 +10,19 @@
 }
 .el-tooltip__popper[x-placement^="top"] .popper__arrow,
 .el-tooltip__popper[x-placement^="top"] .popper__arrow::after {
-    border-top-color: rgb(20, 20, 20) !important;
+    border-top-color: rgba(10, 10, 10, 0.8) !important;
 }
 .el-tooltip__popper[x-placement^="bottom"] .popper__arrow,
 .el-tooltip__popper[x-placement^="bottom"] .popper__arrow::after {
-    border-bottom-color: rgb(20, 20, 20) !important;
+    border-bottom-color: rgba(10, 10, 10, 0.8) !important;
+}
+.el-popper[x-placement^="top"] .popper__arrow,
+.el-popper[x-placement^="top"] .popper__arrow::after{
+    border-top-color: rgba(10, 10, 10, 0.8) !important;
+}
+.el-popper[x-placement^="bottom"] .popper__arrow,
+.el-popper[x-placement^="bottom"] .popper__arrow::after{
+    border-bottom-color: rgba(10, 10, 10, 0.8) !important;
 }
 .el-dropdown-menu.el-popper.el-dropdown-menu--small,
 .el-dropdown-menu.el-popper.activity-extras-dropdown.el-dropdown-menu--medium,
