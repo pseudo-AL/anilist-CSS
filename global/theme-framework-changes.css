@@ -1,0 +1,42 @@
+/*--- This snippet relies on Anzu's Simple Theme Framework (https://anzuftnw.github.io/html/simple-theme-framework.html) as a dependency.
+That stylesheet hooks onto the necessary selectors, and this one merely changes those variables according to my profile-specific preferences.
+The reason this is an external stylesheet on its own is to compress my own AL CSS stylesheet, given that I have almost no need to customize these variables.
+If you'd like to use this in your profile, you need to import Anzu's stylesheet BEFORE mine. ---*/
+
+body,
+.site-theme-dark,
+.site-theme-contrast,
+:root {
+    --color-text: 255, 255, 255;
+    /* plain text, header, statswrap progressbar number indicators */
+    --color-text-light: 255, 255, 255;
+    /* genre and statswrap text, secondary navbar links */
+    --color-text-lighter: 255, 255, 255;
+    /* filter text, time stamp text and icons */
+    --color-foreground-grey-dark: 10, 10, 10, 0.6 !important;
+    /* statswrap progress bar background, activity history empty field background */
+    --color-nav-transparent-background: 20, 20, 20, 0.675;
+    --color-nav-text-hover: 255, 255, 255;
+    /* top navbar text on hover */
+    --color-nav-text: 255, 255, 255;
+    --color-nav-transparent-text: 255, 255, 255;
+    /* top navbar text in transparent state */
+    --color-shadow-blue: 40, 40, 40;
+    --color-background-100: 20, 20, 20, 0.95;
+    --color-background-200: 20, 20, 20, 0.4;
+    --color-gray-100: 20, 20, 20, 0.95;
+    --color-gray-600: 255, 255, 255;
+    /* navdropdown secondary text and icons */
+    --color-gray-700: 255, 255, 255;
+    /* navdropdown footer text and icons */
+    --color-gray-800: 170, 170, 170;
+    /* navdropdown primary text, text and icon hover */
+    --color-gray-900: 170, 170, 170;
+    /* navdropdown footer text and icon hover */
+    --color-nav-transparent-text: 255, 255, 255;
+    /* top navbar text in transparent state */
+    --color-nav-text-hover: 170, 170, 170;
+    /* top navbar text on hover */
+    --color-overlay: 20, 20, 20;
+    /* favourites and activity history hover display, activity little arrow menu */
+}
